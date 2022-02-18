@@ -7,10 +7,13 @@ import DIVIDER_DEKSTOP from "/public/pattern-divider-desktop.svg";
 import DIVIDER_MOBILE from "/public/pattern-divider-mobile.svg";
 
 import DICE from "/public/icon-dice.svg";
+import useWindowDimensions from "../utils/hooks/useWindowDimension";
 
 export default function Home() {
   const [adviceId, setAdviceId] = useState(0);
   const [advice, setAdvice] = useState("");
+
+  const { width } = useWindowDimensions();
 
   useEffect(() => {
     rollTheDiceBaby();
@@ -24,6 +27,8 @@ export default function Home() {
         setAdvice(data?.slip?.advice);
       });
   };
+
+  const isMobile = width && width < 768;
 
   return (
     <div className="px-2">
@@ -42,8 +47,8 @@ export default function Home() {
               {`“${advice}”`}
             </p>
 
-            <div className="mt-10 mb-20">
-              <Image src={DIVIDER_DEKSTOP} alt="" />
+            <div className="mt-10 mb-20 mx-6">
+              <Image src={isMobile ? DIVIDER_MOBILE : DIVIDER_DEKSTOP} alt="" />
             </div>
             <button
               className="absolute -bottom-10 bg-neon rounded-full w-20 h-20 flex items-center justify-center flex-col"
