@@ -4,9 +4,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {
       colors: {
         darkBlue: "#202733",
@@ -16,6 +13,9 @@ module.exports = {
         neon: "#53FFAA",
       },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 };
