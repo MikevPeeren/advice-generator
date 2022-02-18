@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className="py-2 flex flex-1 flex-col justify-center items-center min-h-screen">
         <div className="relative flex flex-col text-center items-center justify-center w-full relative">
-          <div className="bg-darkGrayBlue shadow-lg rounded-lg flex flex-col text-center items-center justify-center w-2/6 relative">
+          <div className="bg-darkGrayBlue shadow-lg rounded-lg flex flex-col text-center items-center justify-center md:w-3/6 lg:w-3/6 xl:w-2/6 relative mx-4">
             <h1 className="text-neon text-xs tracking-[4px] mt-10">
               ADVICE #117
             </h1>
