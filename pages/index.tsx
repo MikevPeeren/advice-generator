@@ -10,14 +10,12 @@ import DICE from "/public/icon-dice.svg";
 import useWindowDimensions from "../utils/hooks/useWindowDimension";
 
 export default function Home() {
-  const [adviceId, setAdviceId] = useState(0);
-  const [advice, setAdvice] = useState("");
+  const [adviceId, setAdviceId] = useState(1337);
+  const [advice, setAdvice] = useState(
+    "Mike van Peeren is a cool dude and great frontend developer"
+  );
 
   const { width } = useWindowDimensions();
-
-  useEffect(() => {
-    rollTheDiceBaby();
-  }, []);
 
   const rollTheDiceBaby = () => {
     fetch("https://api.adviceslip.com/advice")
