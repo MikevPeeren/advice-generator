@@ -4,6 +4,8 @@ import Image from "next/image";
 import DIVIDER_DEKSTOP from "/public/pattern-divider-desktop.svg";
 import DIVIDER_MOBILE from "/public/pattern-divider-mobile.svg";
 
+import DICE from "/public/icon-dice.svg";
+
 export default function Home() {
   return (
     <div className="px-2">
@@ -13,17 +15,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="py-2 flex flex-1 flex-col justify-center items-center min-h-screen">
-        <div className="bg-darkGrayBlue shadow-lg  rounded-lg flex flex-col text-center items-center justify-center w-2/6">
-          <h1 className="text-neon text-xs tracking-[4px] mt-10">
-            ADVICE #117
-          </h1>
-          <p className="mt-10 text-3xl text-lightCyan tracking-[-0.3px] w-3/4">
-            “It is easy to sit up and take notice, what&apos;s difficult is
-            getting up and taking action.”
-          </p>
+        <div className="relative flex flex-col text-center items-center justify-center w-full relative">
+          <div className="bg-darkGrayBlue shadow-lg rounded-lg flex flex-col text-center items-center justify-center w-2/6 relative">
+            <h1 className="text-neon text-xs tracking-[4px] mt-10">
+              ADVICE #117
+            </h1>
+            <p className="mt-10 text-3xl text-lightCyan tracking-[-0.3px] w-3/4">
+              “It is easy to sit up and take notice, what&apos;s difficult is
+              getting up and taking action.”
+            </p>
 
-          <div className="my-10">
-            <Image src={DIVIDER_DEKSTOP} alt="" />
+            <div className="mt-10 mb-20">
+              <Image src={DIVIDER_DEKSTOP} alt="" />
+            </div>
+            <div className="absolute -bottom-10 bg-neon rounded-full w-20 h-20 flex items-center justify-center flex-col ">
+              <Image src={DICE} alt="" />
+            </div>
           </div>
         </div>
       </main>
