@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://advice-generator-pink.vercel.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-advice-card-with-nextjs-AlKG9Dlxc)
+- Live Site URL: [Advice Generator](https://advice-generator-pink.vercel.app/)
 
 ## My process
 
