@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Head from "next/head";
 import Image from "next/image";
 
@@ -7,6 +9,22 @@ import DIVIDER_MOBILE from "/public/pattern-divider-mobile.svg";
 import DICE from "/public/icon-dice.svg";
 
 export default function Home() {
+  const [adviceId, setAdviceId] = useState(0);
+  const [advice, setAdvice] = useState("");
+
+  useEffect(() => {
+    rollTheDiceBaby();
+  }, []);
+
+  const rollTheDiceBaby = () => {
+    fetch("https://api.adviceslip.com/advice")
+      .then((response) => response.json())
+      .then((data) => {
+        setAdviceId(data?.slip?.id);
+        setAdvice(data?.slip?.advice);
+      });
+  };
+
   return (
     <div className="px-2">
       <Head>
@@ -18,19 +36,23 @@ export default function Home() {
         <div className="relative flex flex-col text-center items-center justify-center w-full relative">
           <div className="bg-darkGrayBlue shadow-lg rounded-lg flex flex-col text-center items-center justify-center md:w-3/6 lg:w-3/6 xl:w-2/6 relative mx-4">
             <h1 className="text-neon text-xs tracking-[4px] mt-10">
-              ADVICE #117
+              {`ADVICE #${adviceId}`}
             </h1>
             <p className="mt-10 text-3xl text-lightCyan tracking-[-0.3px] w-3/4">
-              “It is easy to sit up and take notice, what&apos;s difficult is
-              getting up and taking action.”
+              {`“${advice}”`}
             </p>
 
             <div className="mt-10 mb-20">
               <Image src={DIVIDER_DEKSTOP} alt="" />
             </div>
-            <div className="absolute -bottom-10 bg-neon rounded-full w-20 h-20 flex items-center justify-center flex-col ">
+            <button
+              className="absolute -bottom-10 bg-neon rounded-full w-20 h-20 flex items-center justify-center flex-col"
+              onClick={() => {
+                rollTheDiceBaby();
+              }}
+            >
               <Image src={DICE} alt="" />
-            </div>
+            </button>
           </div>
         </div>
       </main>
