@@ -1,52 +1,62 @@
-# Next.js TypeScript TailwindCSS & Sass Starter
+# Frontend Mentor - Advice generator app solution
 
-Use TypeScript, TailwindCSS & Sass to quick start your new Next.js app!!
+This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## 🧐 What's inside?
+## Table of contents
 
-This Starter includes
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-- ⚡️ [Next.js 12](https://nextjs.org/) - The React Framework for Production
-- ⚛️ [React 17](https://reactjs.org/) - A JavaScript library for building user interfaces
-- 🧁 [TailwindCSS v3](https://tailwindcss.com/) - A utility-first CSS framework packed with classes
-- ✨ [TypeScript](https://www.typescriptlang.org/) - TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
-- 🎉 [Sass](https://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-- 📏 [ESLint](https://eslint.org/) — Find and fix problems in your JavaScript code.
-- 🦋 [Prettier](https://prettier.io/) — An opinionated code formatter.
-- 🐶 [Husky](https://github.com/typicode/husky) - Husky improves your commits and more 🐶 woof!
-- 🐶 [Lint Staged](https://github.com/okonet/lint-staged) — Run linters against staged git files and don't let 💩 slip into your code base!
+## Overview
 
-The rest of the Starter is based off of the Next.js default starter.
+### The challenge
 
-## ⚡️ Quick Start
+Users should be able to:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/MikevPeeren/next-typescript-tailwindcss-sass-starter)
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Generate a new piece of advice by clicking the dice icon
 
-## 🚀 Getting Started
+### Screenshot
 
-Run the following command to create a new project with this Starter:
+![](./screenshot.jpg)
 
-```
-yarn create next-app my-app -e https://github.com/MikevPeeren/next-typescript-tailwindcss-sass-starter
-# or
-npx create-next-app my-app -e https://github.com/MikevPeeren/next-typescript-tailwindcss-sass-starter
-```
+### Links
 
-Once the project and dependencies are finished installing, you can navigate to that directory and start up the development server with:
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-```
-yarn dev
-# or
-npm run dev
-```
+## My process
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see your new project!
+I have developed using a Desktop First approach. I worked from top to bottom and added the background as first. My last steps was making minor tweaks here and there for responsiveness. Finally I added the API call to get a random Advice.
 
-## 📚 Learn More About Next.js
+### Built with
 
-To learn more about Next.js, take a look at the following resources:
+- Desktop-first workflow
+- [SASS](https://sass-lang.com/) - Stylesheet language
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - JS library
+- [Tailwindcss](https://tailwindcss.com/) - CSS framework
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### What I learned
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I have learned more about Mobile First design approach. I have also learned more about positioning in CSS in order for components to render properly.
+
+### Useful resources
+
+- [Tailwind Cheatsheet](https://nerdcave.com/tailwind-cheat-sheet) - A Cheatsheet for Tailwind.
+
+## Author
+
+- Website - [Mike van Peeren](https://mikevpeeren.nl/)
+- Frontend Mentor - [@MikevPeeren](https://www.frontendmentor.io/profile/MikevPeeren)
+- Linkedin - [@MikevPeeren](https://www.linkedin.com/in/mikevpeeren/)
+- Github - [@MikevPeeren](https://www.github.com/MikevPeeren)
+- GitLab - [@MikevPeeren](https://www.gitlab.com/MikevPeeren)
