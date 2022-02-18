@@ -53,6 +53,7 @@ export default function Home() {
               onClick={() => {
                 rollTheDiceBaby();
               }}
+              aria-label="Roll the dice"
             >
               <Image src={DICE} alt="" />
             </button>
