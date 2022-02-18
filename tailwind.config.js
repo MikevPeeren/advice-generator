@@ -12,6 +12,9 @@ module.exports = {
         lightCyan: "#CEE3E9",
         neon: "#53FFAA",
       },
+      boxShadow: {
+        cyan: "0px 0px 40px #53FFAA",
+      },
     },
   },
   variants: {

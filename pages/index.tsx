@@ -51,7 +51,7 @@ export default function Home() {
               <Image src={isMobile ? DIVIDER_MOBILE : DIVIDER_DEKSTOP} alt="" />
             </div>
             <button
-              className="absolute -bottom-10 bg-neon rounded-full w-20 h-20 flex items-center justify-center flex-col"
+              className="absolute -bottom-10 bg-neon rounded-full w-20 h-20 flex items-center justify-center flex-col hover:shadow-cyan"
               onClick={() => {
                 rollTheDiceBaby();
               }}
